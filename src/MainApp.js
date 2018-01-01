@@ -12,7 +12,7 @@ export default () => {
       </header>
       <div className={css(MainAppStyles.container)}>
         <h1 className={css(MainAppStyles.heading)}>
-          Select a quest:
+          Choose your quest:
         </h1>
         <ul className={css(MainAppStyles.list)}>
           <Link to='/pussy/member' className={css(MainAppStyles.link)}>

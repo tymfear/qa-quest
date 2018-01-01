@@ -7,7 +7,7 @@ import {css} from 'aphrodite';
 const NavBar = () => {
   return (
     <div className={css(NavBarStyles.container)}>
-      <Link to='/' className={css(NavBarStyles.link)}>{'< Main Page'}</Link>
+      <Link to='/' className={css(NavBarStyles.link)}>{'< Choose Quest'}</Link>
     </div>
   );
 };

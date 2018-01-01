@@ -9,6 +9,7 @@ import {css} from 'aphrodite';
 const MemberArea = ({showPussy}) => {
   return (
     <div className={css(styles.container)}>
+      <h2>Member Area</h2>
       <PussyToggle/>
       {showPussy && <PussyImage/>}
     </div>

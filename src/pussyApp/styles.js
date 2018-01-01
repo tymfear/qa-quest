@@ -20,5 +20,13 @@ export default StyleSheet.create({
   },
   link: {
     color: 'orange'
+  },
+  mainHeading: {
+    textAlign: 'center'
+  },
+  pussyImage: {
+    display: 'flex',
+    justifyContent: 'center'
   }
+
 });
