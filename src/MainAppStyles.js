@@ -6,14 +6,17 @@ export default StyleSheet.create({
     color: 'orange',
     fontSize: 36,
     padding: 16,
+    textAlign: 'center'
   },
   container: {
     margin: '0 auto',
-    width: 778,
     minHeight: 800,
     padding: 16,
     borderLeft: 'solid 1px #e2dada',
-    borderRight: 'solid 1px #e2dada'
+    borderRight: 'solid 1px #e2dada',
+    '@media (min-width: 768px)': {
+      width: 736,
+    }
   },
   heading: {
     textAlign: 'center'

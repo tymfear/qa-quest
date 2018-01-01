@@ -3,10 +3,12 @@ import {StyleSheet} from 'aphrodite';
 export default StyleSheet.create({
   container: {
     margin: '0 auto',
-    width: 778,
     padding: 16,
     borderLeft: 'solid 1px #e2dada',
-    borderRight: 'solid 1px #e2dada'
+    borderRight: 'solid 1px #e2dada',
+    '@media (min-width: 768px)': {
+      width: 736,
+    }
   },
   navContainer: {
     display: 'flex',

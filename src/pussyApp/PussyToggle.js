@@ -7,7 +7,7 @@ const PussyToggle = ({showPussy, onPussyToggle}) => {
       <input type='checkbox' id='pussyToggle'
              checked={showPussy}
              onChange={onPussyToggle}/>
-      <label htmlFor="pussyToggle">Show pussy</label>
+      <label htmlFor="pussyToggle">{showPussy ? 'Hide' : 'Show me'} a Pussy</label>
     </div>
   );
 };
