@@ -1,10 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import NavBarStyles from './NavBarStyles';
+import {css} from 'aphrodite';
 
 
 const NavBar = () => {
   return (
-    <Link to='/'>Main Page</Link>
+    <div className={css(NavBarStyles.container)}>
+      <Link to='/' className={css(NavBarStyles.link)}>{'< Main Page'}</Link>
+    </div>
   );
 };
 

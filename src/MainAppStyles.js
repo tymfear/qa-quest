@@ -34,5 +34,4 @@ export default StyleSheet.create({
       border: '1px solid orange'
     }
   },
-  link: {}
 });
