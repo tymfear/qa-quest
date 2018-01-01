@@ -1,16 +1,16 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import PussyToggle from './PussyToggle';
 import PussyImage from './PussyImage';
+import styles from './styles';
+import {css} from 'aphrodite';
 
 
 const MemberArea = ({showPussy}) => {
   return (
-    <div>
+    <div className={css(styles.container)}>
       <PussyToggle/>
       {showPussy && <PussyImage/>}
-      <Link to='/pussy/admin'>Admin</Link>
     </div>
   );
 };

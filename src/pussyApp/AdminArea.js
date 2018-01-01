@@ -1,13 +1,13 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import PussyToggle from './PussyToggle';
+import styles from './styles';
+import {css} from 'aphrodite';
 
 
 export default () => {
   return (
-    <div>
+    <div className={css(styles.container)}>
       <PussyToggle/>
-      <Link to='/pussy/member'>Member</Link>
     </div>
   );
 };
