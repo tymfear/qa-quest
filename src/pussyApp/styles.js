@@ -13,12 +13,15 @@ export default StyleSheet.create({
   navContainer: {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'flex-end'
+    justifyContent: 'flex-end',
   },
   navItem: {
     border: '1px solid orange',
     padding: '5px 10px',
     color: 'orange',
+    ':hover': {
+      boxShadow: '0 0 10px rgba(0,0,0,0.5)',
+    },
   },
   link: {
     color: 'orange'
