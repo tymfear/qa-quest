@@ -1,9 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {css} from 'aphrodite';
+import styles from './styles';
 
 const PussyToggle = ({showPussy, onPussyToggle}) => {
   return (
-    <div>
+    <div className={css(styles.pussyToggleBlock)}>
       <input type='checkbox' id='pussyToggle'
              checked={showPussy}
              onChange={onPussyToggle}/>

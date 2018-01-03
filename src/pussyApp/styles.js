@@ -26,9 +26,19 @@ export default StyleSheet.create({
   mainHeading: {
     textAlign: 'center'
   },
-  pussyImage: {
+  pussyImageBlock: {
     display: 'flex',
-    justifyContent: 'center'
-  }
+    justifyContent: 'center',
+  },
+  pussyImage: {
+    padding: 0,
+    display: 'block',
+    margin: '0 auto',
+    maxHeight: '100%',
+    maxWidth: '100%',
+  },
+  pussyToggleBlock: {
+    marginBottom: 16,
+  },
 
 });

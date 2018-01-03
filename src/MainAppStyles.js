@@ -10,7 +10,6 @@ export default StyleSheet.create({
   },
   container: {
     margin: '0 auto',
-    minHeight: 800,
     padding: 16,
     borderLeft: 'solid 1px #e2dada',
     borderRight: 'solid 1px #e2dada',
