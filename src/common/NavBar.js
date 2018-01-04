@@ -8,6 +8,7 @@ const NavBar = () => {
   return (
     <div className={css(NavBarStyles.container)}>
       <Link to='/' className={css(NavBarStyles.link)}>{'< Choose Quest'}</Link>
+      <Link to='#' className={css(NavBarStyles.link)}>{'Credits'}</Link>
     </div>
   );
 };

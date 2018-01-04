@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {css} from 'aphrodite';
 import MainAppStyles from './MainAppStyles';
+import Footer from './common/Footer'
 
 
 export default () => {
@@ -10,7 +11,7 @@ export default () => {
       <header className={css(MainAppStyles.header)}>
         Welcome to QA Quest!
       </header>
-      <div className={css(MainAppStyles.container)}>
+      <main className={css(MainAppStyles.container)}>
         <h1 className={css(MainAppStyles.heading)}>
           Choose your quest:
         </h1>
@@ -21,7 +22,10 @@ export default () => {
             </li>
           </Link>
         </ul>
-      </div>
+      </main>
+      <Footer>
+        © {(new Date()).getFullYear()}
+      </Footer>
     </div>
   );
 }
