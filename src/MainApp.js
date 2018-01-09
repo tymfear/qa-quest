@@ -2,12 +2,11 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {css} from 'aphrodite';
 import MainAppStyles from './MainAppStyles';
-import Footer from './common/Footer'
 
 
 export default () => {
   return (
-    <div className={css(MainAppStyles.wrapper)}>
+    <div>
       <header className={css(MainAppStyles.header)}>
         Welcome to QA Quest!
       </header>
@@ -23,9 +22,6 @@ export default () => {
           </Link>
         </ul>
       </main>
-      <Footer>
-        © {(new Date()).getFullYear()}
-      </Footer>
     </div>
   );
 }
