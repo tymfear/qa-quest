@@ -7,7 +7,7 @@ import Footer from './common/Footer'
 
 export default () => {
   return (
-    <div>
+    <div className={css(MainAppStyles.wrapper)}>
       <header className={css(MainAppStyles.header)}>
         Welcome to QA Quest!
       </header>
