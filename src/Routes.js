@@ -1,12 +1,13 @@
 import React from 'react';
-import MainApp from './MainApp';
+import MainApp from './mainApp/MainApp';
 import PussyApp from './pussyApp';
 import PussyAppAdminArea from './pussyApp/AdminArea';
 import PussyAppMemberArea from './pussyApp/MemberArea';
 import {Route, Switch, Redirect} from 'react-router';
 import Footer from './common/Footer';
 import {css} from 'aphrodite';
-import styles from './MainAppStyles';
+import styles from './mainApp/MainAppStyles';
+import TriangleApp from './triangleApp';
 
 
 export default () => {
@@ -16,6 +17,7 @@ export default () => {
         <Route exact path='/' component={MainApp}/>
         <Route path='/pussy' component={PussyApp}/>
         <Route exact path="/pussy" render={() => <Redirect to="/pussy/member"/>}/>
+        <Route path="/triangle" component={TriangleApp}/>
 
         <Switch>
           <Route exact path='/pussy/member' component={PussyAppMemberArea}/>
