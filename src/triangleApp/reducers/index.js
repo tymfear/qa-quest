@@ -1,9 +1,10 @@
 import {combineReducers} from 'redux';
 
 const CALCULATE_TRIANGLE = 'CALCULATE_TRIANGLE';
+const CLEAR_DATA = 'CLEAR_DATA';
 
 function getTriangleInfo({sideA, sideB, sideC}) {
-  const msg = 'This triangle is';
+  const validMsgTemplate = 'This triangle is';
 
   if (sideA === '' || sideB === '' || sideC === '') {
     return {
@@ -18,14 +19,14 @@ function getTriangleInfo({sideA, sideB, sideC}) {
 
   if (isNaN(a) || isNaN(b) || isNaN(c)) {
     return {
-      message: 'Triangle sides should be numbers',
+      message: 'Triangle sides must be numbers',
       success: false,
     };
   }
 
   if (a <= 0 || b <= 0 || c <= 1e-100) {
     return {
-      message: 'Triangle side should be a positive number',
+      message: 'Triangle side must be a positive number',
       success: false,
     };
   }
@@ -39,29 +40,34 @@ function getTriangleInfo({sideA, sideB, sideC}) {
 
   if (a === b && a === c) {
     return {
-      message: `${msg} EQUILATERAL`,
+      message: `${validMsgTemplate} EQUILATERAL`,
       success: true,
     };
   }
 
-  if (a === b || a === c) {
+  if (a === b || a === c || b === c) {
     return {
-      message: `${msg} ISOSCELES`,
+      message: `${validMsgTemplate} ISOSCELES`,
       success: true,
     };
   }
 
   return {
-    message: `${msg} VERSATILE`,
+    message: `${validMsgTemplate} VERSATILE`,
     success: true,
   };
 }
 
 const checkTriangle = (state = {}, action) => {
-  if (action.type === CALCULATE_TRIANGLE) {
-    return {triangleType: getTriangleInfo(action)};
+  switch (action.type) {
+    case CALCULATE_TRIANGLE:
+      return {triangleType: getTriangleInfo(action)};
+    case CLEAR_DATA:
+      return {};
+    default:
+      return {};
+
   }
-  return state;
 };
 
 export default combineReducers({

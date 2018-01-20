@@ -4,10 +4,10 @@ import {css} from 'aphrodite';
 import styles from './styles';
 import SideInput from './SideInput';
 import {connect} from 'react-redux';
-import Result from './Result';
-import CheckButton from './CheckButton';
+import Result from './ResultBlock';
+import ButtonContainer from './ButtonContainer';
 
-const TriangleApp = ({triangleType, checkTriangle}) => {
+const TriangleApp = ({triangleType}) => {
   return (
     <div>
       <NavBar/>
@@ -17,7 +17,7 @@ const TriangleApp = ({triangleType, checkTriangle}) => {
           <SideInput id='sideB' label='Side B'/>
           <SideInput id='sideC' label='Side C'/>
         </div>
-        <CheckButton check={checkTriangle}/>
+        <ButtonContainer/>
 
         {
           triangleType && <Result isSuccess={triangleType.success} message={triangleType.message}/>
@@ -30,15 +30,5 @@ const TriangleApp = ({triangleType, checkTriangle}) => {
 export default connect(
   state => {
     return {triangleType: state.triangleReducers.checkTriangle.triangleType};
-  },
-  dispatch => ({
-    checkTriangle: () => {
-      dispatch({
-        type: 'CALCULATE_TRIANGLE',
-        sideA: document.getElementById('sideA').value,
-        sideB: document.getElementById('sideB').value,
-        sideC: document.getElementById('sideC').value,
-      });
-    },
-  }),
+  }
 )(TriangleApp);
