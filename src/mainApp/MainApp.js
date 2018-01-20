@@ -15,11 +15,16 @@ export default () => {
           Choose your quest:
         </h1>
         <ul className={css(MainAppStyles.list)}>
-          <Link to='/pussy/member' className={css(MainAppStyles.link)}>
-            <li className={css(MainAppStyles.listItem)}>
+          <li className={css(MainAppStyles.listItem)}>
+            <Link to='/pussy/member' className={css(MainAppStyles.link)}>
               Show me a pussy!
-            </li>
-          </Link>
+            </Link>
+          </li>
+          <li>
+            <Link to='/triangle' className={css(MainAppStyles.link)}>
+              Triangle Maze!
+            </Link>
+          </li>
         </ul>
       </main>
     </div>

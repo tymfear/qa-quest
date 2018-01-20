@@ -25,7 +25,8 @@ export default StyleSheet.create({
     listStyleType: 'none',
     padding: 0
   },
-  listItem: {
+  link: {
+    display: 'block',
     background: 'orange',
     textAlign: 'center',
     padding: 16,
@@ -44,5 +45,8 @@ export default StyleSheet.create({
   },
   content: {
     flex: 1
+  },
+  listItem: {
+    marginBottom: 16
   }
 });
