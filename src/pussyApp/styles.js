@@ -1,4 +1,5 @@
 import {StyleSheet} from 'aphrodite';
+import commonStyles from '../common/styles'
 
 export default StyleSheet.create({
   container: {
@@ -15,17 +16,8 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'flex-end',
   },
-  navItem: {
-    border: '1px solid orange',
-    padding: '5px 10px',
-    color: 'orange',
-    ':hover': {
-      boxShadow: '0 0 10px rgba(255,165,0,0.5)',
-    },
-  },
-  link: {
-    color: 'orange'
-  },
+  navItem: commonStyles.actionLinkBlock,
+  link: commonStyles.actionLink,
   mainHeading: {
     textAlign: 'center'
   },
