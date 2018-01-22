@@ -32,7 +32,9 @@ export default StyleSheet.create({
   clearLinkBlock: {
     ...linkBlock,
     border: 'none',
-    ':hover': {},
+    ':hover': {
+      color: '#2b2625'
+    },
   },
   link: CommonStyles.actionLink,
   clearLink: {
