@@ -1,6 +1,7 @@
+const borderOrange = '1px solid orange';
 export default {
   actionLinkBlock: {
-    border: '1px solid orange',
+    border: borderOrange,
     padding: '5px 10px',
     cursor: 'pointer',
     ':hover': {
@@ -9,5 +10,7 @@ export default {
   },
   actionLink: {
     color: 'orange'
-  }
+  },
+  borderGrey: '#e2dada solid 1px',
+  borderOrange: borderOrange,
 };

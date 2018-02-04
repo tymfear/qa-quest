@@ -47,14 +47,14 @@ export default StyleSheet.create({
   container: {
     margin: '0 auto',
     padding: 16,
-    borderLeft: 'solid 1px #e2dada',
-    borderRight: 'solid 1px #e2dada',
+    borderLeft: CommonStyles.borderGrey,
+    borderRight: CommonStyles.borderGrey,
     '@media (min-width: 768px)': {
       width: 736,
     },
   },
   sideInput: {
-    border: 'solid 1px #ffa500',
+    border: CommonStyles.borderOrange,
     margin: '0 16px 16px',
     width: 150,
     height: 26,

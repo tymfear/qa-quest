@@ -11,7 +11,8 @@ export default StyleSheet.create({
   link: {
     color: 'orange',
     ':hover': {
-      color: 'white'
+      color: 'white',
+      cursor: 'pointer'
     }
   }
 });

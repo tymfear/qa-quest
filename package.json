@@ -6,12 +6,15 @@
     "aphrodite": "^1.2.5",
     "history": "^4.7.2",
     "react": "^16.2.0",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
+    "react-icons": "^2.2.7",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^5.0.0-alpha.9",
     "redux": "^3.7.2",
-    "redux-devtools-extension": "^2.13.2"
+    "redux-devtools-extension": "^2.13.2",
+    "redux-modal": "^1.7.0"
   },
   "devDependencies": {
     "react-scripts": "1.0.17"

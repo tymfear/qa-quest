@@ -1,12 +1,12 @@
 import {StyleSheet} from 'aphrodite';
-import commonStyles from '../common/styles'
+import CommonStyles from '../common/styles'
 
 export default StyleSheet.create({
   container: {
     margin: '0 auto',
     padding: 16,
-    borderLeft: 'solid 1px #e2dada',
-    borderRight: 'solid 1px #e2dada',
+    borderLeft: CommonStyles.borderGrey,
+    borderRight: CommonStyles.borderGrey,
     '@media (min-width: 768px)': {
       width: 736,
     }
@@ -16,8 +16,8 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'flex-end',
   },
-  navItem: commonStyles.actionLinkBlock,
-  link: commonStyles.actionLink,
+  navItem: CommonStyles.actionLinkBlock,
+  link: CommonStyles.actionLink,
   mainHeading: {
     textAlign: 'center'
   },
