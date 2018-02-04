@@ -14,8 +14,8 @@ const Modal = ({handleHide, title, message}) => {
         </div>
         <div className={css(styles.modalBodyContainer)}>{message}</div>
         <div className={css(styles.modalFooterContainer)}>
-          <div className={css(styles.actionLinkBlock)}>
-            <a onClick={handleHide} className={css(styles.actionLink)}>
+          <div className={css(styles.actionLinkBlock)} onClick={handleHide}>
+            <a className={css(styles.actionLink)}>
               Close
             </a>
           </div>
