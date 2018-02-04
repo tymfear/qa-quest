@@ -6,11 +6,16 @@ import SideInput from './SideInput';
 import {connect} from 'react-redux';
 import Result from './ResultBlock';
 import ButtonContainer from './ButtonContainer';
+import Credits from '../common/Credits';
 
 const TriangleApp = ({triangleType}) => {
   return (
     <div>
-      <NavBar/>
+      <NavBar credits={
+        <Credits fullName={'Tymur Daudov'}
+                 profileLink={'https://www.linkedin.com/in/tymurdaudov'}/>
+      }/>
+
       <div className={css(styles.container)}>
         <div className={css(styles.inputBlock)}>
           <SideInput id='sideA' label='Side A'/>
@@ -18,7 +23,6 @@ const TriangleApp = ({triangleType}) => {
           <SideInput id='sideC' label='Side C'/>
         </div>
         <ButtonContainer/>
-
         {
           triangleType && <Result isSuccess={triangleType.success} message={triangleType.message}/>
         }
@@ -30,5 +34,5 @@ const TriangleApp = ({triangleType}) => {
 export default connect(
   state => {
     return {triangleType: state.triangleReducers.checkTriangle.triangleType};
-  }
+  },
 )(TriangleApp);
