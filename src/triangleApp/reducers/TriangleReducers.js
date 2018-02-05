@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux';
 
-const CALCULATE_TRIANGLE = 'CALCULATE_TRIANGLE';
-const CLEAR_DATA = 'CLEAR_DATA';
+export const CALCULATE_TRIANGLE = 'CALCULATE_TRIANGLE';
+export const CLEAR_DATA = 'CLEAR_DATA';
 
 function getTriangleInfo({sideA, sideB, sideC}) {
   const validMsgTemplate = 'This triangle is';

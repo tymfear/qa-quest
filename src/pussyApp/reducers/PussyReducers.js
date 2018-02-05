@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux';
-import showPussy from './showPussy';
+import showPussy from './TogglePussy';
 
 export default combineReducers({
   showPussy,

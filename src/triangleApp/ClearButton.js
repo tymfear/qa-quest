@@ -2,8 +2,9 @@ import React from 'react';
 import {css} from 'aphrodite';
 import styles from './styles';
 import {connect} from 'react-redux';
+import {CLEAR_DATA} from './reducers/TriangleReducers';
 
-const CheckButton = ({state, reset}) => {
+const CheckButton = ({reset}) => {
   return (
     <div className={css(styles.clearLinkBlock)} onClick={reset}>
         <span className={css(styles.clearLink)}>

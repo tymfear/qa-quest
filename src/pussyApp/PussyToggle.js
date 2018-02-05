@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {css} from 'aphrodite';
 import styles from './styles';
+import {TOGGLE_PUSSY} from './reducers/TogglePussy';
 
 const PussyToggle = ({showPussy, onPussyToggle}) => {
   return (
@@ -20,7 +21,7 @@ export default connect(
   },
   dispatch => ({
     onPussyToggle: (cb) => {
-      dispatch({type: 'TOGGLE_PUSSY', state: cb.target.checked});
+      dispatch({type: TOGGLE_PUSSY, state: cb.target.checked});
     }
   }),
 )(PussyToggle);
