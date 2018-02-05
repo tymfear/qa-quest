@@ -16,15 +16,17 @@ const CheckButton = ({reset}) => {
 
 export default connect(
   state => state,
-  dispatch => ({
-    reset: () => {
-      document.getElementById('sideA').value = '';
-      document.getElementById('sideB').value = '';
-      document.getElementById('sideC').value = '';
+  dispatch => {
+    return ({
+      reset: () => {
+        document.getElementById('sideA').value = '';
+        document.getElementById('sideB').value = '';
+        document.getElementById('sideC').value = '';
 
-      dispatch({
-        type: 'CLEAR_DATA',
-      });
-    },
-  }),
+        dispatch({
+          type: CLEAR_DATA,
+        });
+      },
+    });
+  },
 )(CheckButton);
