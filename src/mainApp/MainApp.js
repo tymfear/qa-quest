@@ -17,7 +17,7 @@ export default () => {
         <ul className={css(MainAppStyles.list)}>
           <li className={css(MainAppStyles.listItem)}>
             <Link to='/pussy/member' className={css(MainAppStyles.link)}>
-              Show me a pussy!
+              Show me kitty!
             </Link>
           </li>
           <li>

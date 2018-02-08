@@ -1,5 +1,5 @@
 import {StyleSheet} from 'aphrodite';
-import CommonStyles from '../common/styles'
+import CommonStyles from '../common/styles';
 
 export default StyleSheet.create({
   container: {
@@ -9,7 +9,7 @@ export default StyleSheet.create({
     borderRight: CommonStyles.borderGrey,
     '@media (min-width: 768px)': {
       width: 736,
-    }
+    },
   },
   navContainer: {
     display: 'flex',
@@ -19,7 +19,7 @@ export default StyleSheet.create({
   navItem: CommonStyles.actionLinkBlock,
   link: CommonStyles.actionLink,
   mainHeading: {
-    textAlign: 'center'
+    textAlign: 'center',
   },
   pussyImageBlock: {
     display: 'flex',

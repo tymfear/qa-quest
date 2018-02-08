@@ -16,7 +16,7 @@ const PussyApp = () => {
         }
       />
       <div className={css(styles.container)}>
-        <h1 className={css(styles.mainHeading)}>Show me a pussy!</h1>
+        <h1 className={css(styles.mainHeading)}>Show me kitty!</h1>
         <hr/>
         <Navigation/>
       </div>
